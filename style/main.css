@@ -8,7 +8,37 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section 
 body{
 	margin:0;
 }
+/*main*/
+section{
+    background-color: white;
+    padding: 20px;
+}
 
+form ul li{
+    list-style:none;
+    padding:0;
+}
+
+form legend {
+    margin-left: 20px;
+}
+
+#identite label{
+    display:inline-block;
+    width: 10%;
+    min-width:90px;
+    margin: 8px;
+}
+input{
+    border-radius: 1px;
+    border-color: red;
+}
+h2{
+    color: red;
+}
+label:last-child{
+    width: 100%;
+}
 header, footer{
 	background-color:#fd9700;
 	color:white;
@@ -27,7 +57,6 @@ header, footer{
 	display: block;
 }
 
-
 /* HEADER*/
 
 /*MENU HAMBURGER*/
@@ -43,8 +72,7 @@ header, footer{
 	margin:8px;
 }
 
-
-.noshow{
+.nowshow{
 	display:none;
 }
 
@@ -76,8 +104,6 @@ nav ul li a{
 nav ul li a:hover{
 	background-color:darkorange;
 }
-
-
 
 
 @media (max-width: 960px) {
