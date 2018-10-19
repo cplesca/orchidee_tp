@@ -4,13 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contactez-nous</title>
+    <title>Acceuil</title>
     <link rel="shortcut icon" href="images/icon_orchidee.png" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="libraries/bootstrap/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/contactus.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/main.css" />
+
+
     <!-- Bootstrap core JavaScript -->
     <script src="libraries/jquery/jquery.min.js"></script>
     <script src="libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -20,7 +22,7 @@
 <!-- menu -->
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top main-menu">
     <div class="container">
-        <a class="navbar-brand" href="index.html"><em><strong class="logo orchidees-color-text">ORCHIDÉES</strong><em></a>
+        <a class="navbar-brand" href="index.html"><em><strong class="logo orchidees-color-text">ORCHIDÉES</strong></em></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,99 +46,175 @@
     </div>
 </nav>
 
-<!-- gap -->
-<div class="menu-gap"></div>
+<header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('images/carousel_1.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>On adore les orchidées.</h3>
+                    <p class="black-text">Chaque jour nous sommes ouvert pour vous.</p>
+                </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('images/carousel_2.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>On adore le blanc.</h3>
+                    <p class="black-text">Pour la sagesse.</p>
+                </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url('images/carousel_3.jpg')">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>On adore les couleurs</h3>
+                    <p class="black-text">On aime nos clients.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Retourner</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Avancer</span>
+        </a>
+    </div>
+</header>
 
 <!-- Page Content -->
 <div class="container">
-
-    <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">Contactez-nous</h1>
-
-    <!-- Content Row -->
-    <div class="row">
-        <!-- Map Column -->
-        <div class="col-lg-8 mb-4">
-            <!-- Embedded Google Map -->
-            <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=45.5440916,-95.677068&amp;spn=56.506174,-73.6424363&amp;t=m&amp;z=4&amp;output=embed"></iframe>
-        </div>
-        <!-- Contact Details Column -->
-        <div class="col-lg-4 mb-4 py-2">
-            <h3>Les coordonées:</h3>
-            <p>
-                3481 Melrose Place
-                <br>Beverly Hills, CA 90210
-                <br>
-            </p>
-            <p>
-                <abbr title="Phone">P</abbr>: (123) 456-7890
-            </p>
-            <p>
-                <abbr title="Email">E</abbr>:
-                <a href="mailto:name@example.com">support@orchidees.com
-                </a>
-            </p>
-            <p>
-                <abbr title="Hours">H</abbr>: Lundi - Vendredi: 9:00 AM to 5:00 PM
-            </p>
-        </div>
-    </div>
-
-    <!-- Contact Form -->
-    <div class="row">
-        <div class="col-lg-8 mb-4">
-            <h3>Send us a Message</h3>
-            <form name="sentMessage" id="contactForm" novalidate>
-                <div class="control-group form-group">
-                    <div class="controls">
-                        <label>Votre nom:</label>
-                        <input type="text" class="form-control" id="name" required data-validation-required-message="Saisir le nom."
-                               placeholder="Prénom Nom">
-                        <p class="help-block"></p>
-                    </div>
-                </div>
-                <div class="control-group form-group">
-                    <div class="controls">
-                        <label>Tel:</label>
-                        <input type="tel" class="form-control" id="phone" required data-validation-required-message="Saisir le # de tel."
-                               placeholder="Saisir le # de tel.">
-                    </div>
-                </div>
-                <div class="control-group form-group">
-                    <div class="controls">
-                        <label>Email Address:</label>
-                        <input type="email" class="form-control" id="email" required
-                               data-validation-required-message="Saisir le courriel" placeholder="Saisir le courriel">
-                    </div>
-                </div>
-                <div class="control-group form-group">
-                    <div class="controls">
-                        <label>Message:</label>
-                        <textarea rows="10" cols="100" class="form-control" id="message" required
-                                  data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"
-                                  placeholder="Votre message"></textarea>
-                    </div>
-                </div>
-                <div id="success"></div>
-
-                <button type="submit" class="btn btn-primary" id="sendMessageButton">Envouyer</button>
-            </form>
-        </div>
-
-    </div>
-    <!-- /.row -->
-
+    <h1 class="my-4"><strong>Binevenu dans notre jardin.</strong></h1>
 </div>
 
-<footer class="py-1">
-    <div class="container">
-        <div class="row-container">
-            <div class="d-bloc">
-                <p class="m-0 text-center black-text">Copyright &copy; Orchidées 2018</p>
+<div class="row-container">
+    <div class="col-xs-12 col-md-4 padding-1">
+        <div class="card h-100">
+            <h4 class="card-header border-0">Qui somme nous?</h4>
+            <div class="card-body">
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
+                    necessitatibus neque.</p>
+            </div>
+            <div class="card-footer border-0">
+                <a href="/about.html" class="btn btn-primary">En savoir plus</a>
             </div>
         </div>
     </div>
+    <div class="col-xs-12 col-md-4 padding-1">
+        <div class="card h-100">
+            <h4 class="card-header border-0">Conseils outils.</h4>
+            <div class="card-body">
+
+            </div>
+            <div class="card-footer border-0">
+                <a href="/contacus.html" class="btn btn-primary">En savoir plus</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-md-4 padding-1">
+        <div class="card h-100">
+            <h4 class="card-header border-0">Nous somme appréciés!</h4>
+            <div class="card-body facebook-post-containern">
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fisimtl&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=256505721730609"
+                        width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                        allowTransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <div class="card-footer border-0">
+                <a href="https://www.facebook.com/isimtl" class="btn btn-primary" target="_blank">Voir
+                    plus</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br />
+
+<!-- Footer -->
+<footer class="py-5">
+    <div class="container">
+        <div class="row-container">
+            <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-2">
+                                    <div class="box-part text-center">
+                                        <a href="skype:+1234567890?call"><i class="fa fa-skype fa-3x" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-2">
+                                    <div class="box-part text-center">
+                                        <a href="callto://+1234567890?call"><i class="fa fa-phone fa-3x"
+                                                                               aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 padding-2">
+                        <div class="box-part text-center">
+                            <a href="callto://+1234567890?call"><strong>1234567890</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12">
+                    <iframe width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                            src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=45.5440916,-95.677068&amp;spn=56.506174,-73.6424363&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-2">
+                                    <div class="box-part text-center">
+                                        <a href="#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-2">
+                                    <div class="box-part text-center">
+                                        <a href="#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                    <a href="# padding-2">
+                                        <div class="box-part text-center"> <i class="fa fa-facebook fa-3x"
+                                                                              aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-2">
+                                <div class="box-part text-center">
+                                    <a href="#"><i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 padding-2">
+                                <div class="box-part text-center">
+                                    <a href="#"><i class="fa fa-google-plus fa-3x" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-bloc">
+            <p class="m-0 text-center black-text">Copyright &copy; Orchidées 2018</p>
+        </div>
+    </div>
+    <!-- /.container -->
 </footer>
+
+
 </body>
 
 </html>
