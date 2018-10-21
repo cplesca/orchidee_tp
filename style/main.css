@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Mali);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 .carousel-item {
 	height: 65vh;
 	min-height: 300px;
@@ -61,7 +63,7 @@ body {
 }
 
 .orchidees-color-text {
-	color: rgba(181, 156, 218) !important;
+	color: rgba(181, 156, 218 ) !important;
 }
 
 .main-menu {
@@ -117,6 +119,15 @@ footer {
 		padding-top: 56px;
 	}
 }
+/*page de portofolio*/
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.portfolio-item img {
+    height: 200px;
+}
+
 
 /*
 @media(max-width: 760px) {
