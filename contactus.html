@@ -55,10 +55,16 @@
     <!-- Contact Form -->
     <div class="row">
         <div class="col-lg-8 mb-4">
-            <h3>Send us a Message</h3>
             <form name="sentMessage" id="contactForm" novalidate>
                 <div class="control-group form-group">
                     <div class="controls">
+                        <div class="col-xs-4">
+                            <fieldset class="border border-primary col-xs-12 col-sm-6 p-2 border-0">
+                                <label class="radio-inline p-1"><input type="radio" name="salut_optradio" value="M"
+                                                                       required />M</label>
+                                <label class="radio-inline p-1"><input type="radio" name="salut_optradio" value="Mme"
+                                                                       required />Mme</label>
+                            </fieldset>
                         <label>Votre nom:</label>
                         <input type="text" class="form-control" id="name" required data-validation-required-message="Saisir le nom."
                                placeholder="Prénom Nom">
@@ -79,6 +85,16 @@
                                data-validation-required-message="Saisir le courriel" placeholder="Saisir le courriel">
                     </div>
                 </div>
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <div class="col-xs-12 col-sm-6 p-2">
+                                <label for="sel1">Age</label>
+                                <select class="form-control" name="age">
+                                    <option value="45plus"> plus grand que 45 </option>
+                                    <option value="65plus"> plus grand que 65 </option>
+                                </select>
+                            </div>
+                        </div>
                 <div class="control-group form-group">
                     <div class="controls">
                         <label>Message:</label>
@@ -90,6 +106,8 @@
                 <div id="success"></div>
 
                 <button type="submit" class="btn btn-primary" id="sendMessageButton">Envouyer</button>
+                    </div>
+                </div>
             </form>
         </div>
 
